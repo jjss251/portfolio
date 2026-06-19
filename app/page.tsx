@@ -61,7 +61,9 @@ export default function Home() {
               </BlurFade>
               <BlurFade delay={0.25}>
                 <p className="max-w-md text-lg leading-relaxed text-[#1a1a1a]/80">
-                  심물리학 및 인간공학 기반의 분석적 인사이트를 바탕으로
+                  심물리학 및 인간공학 기반의
+                  <br />
+                  분석적 인사이트를 바탕으로
                   <br />
                   의미있는 사용자 경험을 설계해요.
                 </p>
@@ -214,9 +216,6 @@ export default function Home() {
                         <h3 className="text-base font-medium leading-snug tracking-tight">
                           {work.title}
                         </h3>
-                        <p className="text-sm leading-relaxed text-[#1a1a1a]/60">
-                          {work.summary}
-                        </p>
                       </div>
                     </div>
                   </MagicCard>
