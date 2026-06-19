@@ -28,11 +28,25 @@ export default function Home() {
           <span className="text-base font-semibold tracking-tight">
             Junseong Park<sup className="text-[0.5em]">®</sup>
           </span>
-          <p className="hidden text-right text-xs leading-relaxed tracking-wide text-[#1a1a1a]/60 sm:block">
-            UX Designer &amp; Researcher
-            <br />
-            Samsung Electronics MX
-          </p>
+          <div className="flex items-start gap-4">
+            <Link
+              href="/brand-kit"
+              className="hidden items-center gap-1.5 rounded-full border border-[#1a1a1a]/15 bg-white/30 px-3 py-1 text-xs text-[#1a1a1a]/50 backdrop-blur-sm transition-all hover:border-[#1a1a1a]/35 hover:bg-white/60 hover:text-[#1a1a1a]/80 sm:flex"
+            >
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" className="shrink-0">
+                <circle cx="3" cy="3" r="2.5" fill="currentColor" opacity="0.7" />
+                <circle cx="7" cy="3" r="2.5" fill="currentColor" opacity="0.5" />
+                <circle cx="3" cy="7" r="2.5" fill="currentColor" opacity="0.4" />
+                <circle cx="7" cy="7" r="2.5" fill="currentColor" opacity="0.6" />
+              </svg>
+              Brand Kit
+            </Link>
+            <p className="hidden text-right text-xs leading-relaxed tracking-wide text-[#1a1a1a]/60 sm:block">
+              UX Designer &amp; Researcher
+              <br />
+              Samsung Electronics MX
+            </p>
+          </div>
         </header>
 
         <div className="relative z-10 flex flex-1 flex-col justify-center py-16">
@@ -49,7 +63,7 @@ export default function Home() {
                 <p className="max-w-md text-lg leading-relaxed text-[#1a1a1a]/80">
                   심물리학 및 인간공학 기반의 분석적 인사이트를 바탕으로
                   <br />
-                  사용자에게 의미 있는 경험을 설계해요.
+                  의미있는 사용자 경험을 설계해요.
                 </p>
               </BlurFade>
               <BlurFade delay={0.4}>
@@ -233,7 +247,7 @@ export default function Home() {
 
             <BlurFade inView delay={0.3}>
               <p className="max-w-2xl text-base leading-relaxed text-[#e8e3da]/70 sm:text-lg">
-                함께 새로운 경험을 설계하고 싶다면 간단히 남겨주세요.
+                함께 새로운 UX를 만들고 싶다면 간단히 남겨주세요.
               </p>
             </BlurFade>
           </div>
