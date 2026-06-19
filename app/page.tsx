@@ -4,6 +4,7 @@ import HeroSpotlight from "./hero-spotlight";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { works } from "@/lib/works";
+import TallyEmbed from "./tally-embed";
 
 export default function Home() {
   return (
@@ -226,27 +227,19 @@ export default function Home() {
           <div className="flex flex-col gap-6 sm:gap-8">
             <BlurFade inView delay={0.2}>
               <h2 className="text-2xl font-light tracking-tight sm:text-3xl">
-                함께 만들 프로젝트
+                Project with Junseong Park
               </h2>
             </BlurFade>
 
             <BlurFade inView delay={0.3}>
               <p className="max-w-2xl text-base leading-relaxed text-[#e8e3da]/70 sm:text-lg">
-                브랜드, 제품, 인터페이스, 콘텐츠를 함께 만들고 싶다면 간단히
-                남겨주세요.
+                함께 새로운 경험을 설계하고 싶다면 간단히 남겨주세요.
               </p>
             </BlurFade>
           </div>
 
           <BlurFade inView delay={0.4}>
-            <div
-              aria-label="Tally 폼 영역"
-              className="flex min-h-64 w-full items-center justify-center rounded-2xl border border-dashed border-white/15 bg-[#e8e3da]/5 px-6 py-16 sm:min-h-80 sm:px-10 sm:py-20 lg:min-h-96"
-            >
-              <p className="text-center text-sm text-[#e8e3da]/40 sm:text-base">
-                Tally 폼이 여기에 들어갑니다
-              </p>
-            </div>
+            <TallyEmbed />
           </BlurFade>
         </div>
       </section>
